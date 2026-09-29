@@ -36,8 +36,8 @@
     .support-note strong { color:#314656; }
     .speaker-note { text-align:center; color:var(--muted); margin:-8px auto 32px; }
     .speaker-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:44px 27px; text-align:center; }
+    .organizer-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:27px; }
     .speaker { min-width:0; }
-    .speaker:nth-child(10) { grid-column:2; }
     .speaker img { width:150px; height:150px; display:block; margin:0 auto 15px; border-radius:50%; object-fit:cover; object-position:center 38%; background:#e7e9eb; box-shadow:0 2px 8px rgba(0,0,0,.19); }
     .speaker img.hino { object-position:center top; }
     .speaker img.atsushi { object-position:center 26%; }
@@ -68,7 +68,6 @@
       .hero-inner { padding:70px 0 76px; }
       .panel { padding:31px 25px 35px; }
       .speaker-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:33px 15px; }
-      .speaker:nth-child(10) { grid-column:auto; }
       .speaker img { width:132px; height:132px; }
       .venue-layout { grid-template-columns:1fr; gap:12px; }
     }
@@ -93,7 +92,7 @@
 </head>
 <body id="home">
   <nav class="site-nav" aria-label="Main navigation">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#speakers">Speakers</a><a href="#programme">Programme</a><a href="#venue">Venue</a>
+    <a href="#home">Home</a><a href="#about">About</a><a href="#organizers">Organizers</a><a href="#speakers">Speakers</a><a href="#programme">Programme</a><a href="#venue">Venue</a>
   </nav>
   <header class="hero">
     <div class="hero-inner">
@@ -111,14 +110,19 @@
         <p class="support-note"><strong>Support.</strong> This workshop is supported by the JST BOOST project <em>Developing Theoretical Understanding to Enable Efficient and Safe Large Foundation Models</em> (Principal Investigator: Wei Huang).</p>
       </div>
     </section>
-    <section class="panel" id="speakers" aria-labelledby="speakers-heading">
-      <h2 id="speakers-heading">Speakers</h2>
-      <p class="speaker-note">Current speaker list; presentation details are forthcoming.</p>
-      <div class="speaker-grid">
+    <section class="panel" id="organizers" aria-labelledby="organizers-heading">
+      <h2 id="organizers-heading">Organizers</h2>
+      <div class="speaker-grid organizer-grid">
         <article class="speaker"><img src="taiji.webp" alt="Taiji Suzuki" loading="lazy"><h3><a href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank" rel="noopener noreferrer">Taiji Suzuki</a></h3><p>The University of Tokyo · RIKEN AIP</p></article>
         <article class="speaker"><img src="kenji.webp" alt="Kenji Fukumizu" loading="lazy"><h3><a href="https://www.ism.ac.jp/~fukumizu/" target="_blank" rel="noopener noreferrer">Kenji Fukumizu</a></h3><p>Institute of Statistical Mathematics</p></article>
         <article class="speaker"><img src="wei.webp" alt="Wei Huang" loading="lazy"><h3><a href="https://weihuang05.github.io/" target="_blank" rel="noopener noreferrer">Wei Huang</a></h3><p>RIKEN AIP</p></article>
         <article class="speaker"><img class="hino" src="hino.webp" alt="Hideitsu Hino" loading="lazy"><h3><a href="https://sites.google.com/view/hinohide/" target="_blank" rel="noopener noreferrer">Hideitsu Hino</a></h3><p>Institute of Statistical Mathematics</p></article>
+      </div>
+    </section>
+    <section class="panel" id="speakers" aria-labelledby="speakers-heading">
+      <h2 id="speakers-heading">Speakers</h2>
+      <p class="speaker-note">Current speaker list; presentation details are forthcoming.</p>
+      <div class="speaker-grid">
         <article class="speaker"><img class="atsushi" src="atsushi.webp" alt="Atsushi Nitanda" loading="lazy"><h3><a href="https://sites.google.com/site/atsushinitanda/" target="_blank" rel="noopener noreferrer">Atsushi Nitanda</a></h3><p>A*STAR CFAR, Singapore</p></article>
         <article class="speaker"><img src="renjie.webp" alt="Renjie Liao" loading="lazy"><h3><a href="https://lrjconan.github.io/" target="_blank" rel="noopener noreferrer">Renjie Liao</a></h3><p>University of British Columbia</p></article>
         <article class="speaker"><img src="andi.webp" alt="Andi Han" loading="lazy"><h3><a href="https://andihan3.github.io/" target="_blank" rel="noopener noreferrer">Andi Han</a></h3><p>University of Sydney</p></article>
