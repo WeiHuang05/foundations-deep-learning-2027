@@ -50,7 +50,10 @@
     .speaker h3 a { text-decoration:underline; text-underline-offset:2px; }
     .speaker p { max-width:220px; margin:0 auto; font-size:.94rem; line-height:1.45; }
     .programme-note { margin:-7px auto 20px; text-align:center; color:var(--muted); }
+    .programme-day { margin:30px 0 13px; font-size:1.2rem; color:#314656; }
     .schedule { width:100%; border-collapse:collapse; }
+    .schedule .break-row { background:#f7f9fa; }
+    .schedule caption { text-align:left; color:var(--muted); font-size:.92rem; padding-bottom:10px; }
     .schedule th,.schedule td { padding:16px 14px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
     .schedule thead th { background:#edf4f8; border-top:1px solid var(--line); color:#314656; }
     .schedule th:first-child,.schedule td:first-child { width:34%; }
@@ -142,15 +145,45 @@
     </section>
     <section class="panel" id="programme" aria-labelledby="programme-heading">
       <h2 id="programme-heading">Programme</h2>
-      <p class="programme-note">A detailed timetable and talk abstracts will follow.</p>
+      <p class="programme-note">Preliminary programme · All times are Japan Standard Time (JST, UTC+9).<br>Each invited talk is 45 minutes, including 10 minutes for questions. Speakers and talk titles will be announced later.</p>
+      <h3 class="programme-day">Day 1 · Thursday, 18 February 2027</h3>
       <table class="schedule">
-        <thead><tr><th scope="col">Date</th><th scope="col">Programme</th></tr></thead>
+        <caption>Day 1 timetable</caption>
+        <thead><tr><th scope="col">Time (JST)</th><th scope="col">Programme</th></tr></thead>
         <tbody>
-          <tr><td>Thursday, 18 February</td><td>Research talks and discussion · details to be announced</td></tr>
-          <tr><td>Friday, 19 February</td><td>Research talks and discussion · details to be announced</td></tr>
+          <tr class="break-row"><td>09:30–09:50</td><td>Registration &amp; coffee</td></tr>
+          <tr><td>09:50–10:00</td><td>Opening remarks</td></tr>
+          <tr><td>10:00–10:45</td><td>Invited talk</td></tr>
+          <tr><td>10:45–11:30</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>11:30–12:00</td><td>Coffee break</td></tr>
+          <tr><td>12:00–12:45</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>12:45–14:00</td><td>Lunch break</td></tr>
+          <tr><td>14:00–14:45</td><td>Invited talk</td></tr>
+          <tr><td>14:45–15:30</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>15:30–16:00</td><td>Coffee break</td></tr>
+          <tr><td>16:00–16:45</td><td>Invited talk</td></tr>
+          <tr><td>16:45–17:00</td><td>Discussion</td></tr>
         </tbody>
       </table>
-      <p class="schedule-caption">All times on the final programme will be Japan Standard Time (JST). Registration details will be posted here once available.</p>
+      <h3 class="programme-day">Day 2 · Friday, 19 February 2027</h3>
+      <table class="schedule">
+        <caption>Day 2 timetable</caption>
+        <thead><tr><th scope="col">Time (JST)</th><th scope="col">Programme</th></tr></thead>
+        <tbody>
+          <tr class="break-row"><td>09:30–10:00</td><td>Arrival &amp; coffee</td></tr>
+          <tr><td>10:00–10:45</td><td>Invited talk</td></tr>
+          <tr><td>10:45–11:30</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>11:30–12:00</td><td>Coffee break</td></tr>
+          <tr><td>12:00–12:45</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>12:45–14:00</td><td>Lunch break</td></tr>
+          <tr><td>14:00–14:45</td><td>Invited talk</td></tr>
+          <tr><td>14:45–15:30</td><td>Invited talk</td></tr>
+          <tr class="break-row"><td>15:30–16:00</td><td>Coffee break</td></tr>
+          <tr><td>16:00–16:45</td><td>Invited talk</td></tr>
+          <tr><td>16:45–17:00</td><td>Discussion &amp; closing remarks</td></tr>
+        </tbody>
+      </table>
+      <p class="schedule-caption">The workshop programme consists of invited talks and discussion. Registration details will be posted here once available.</p>
     </section>
     <section class="panel" id="venue" aria-labelledby="venue-heading">
       <h2 id="venue-heading">Venue</h2>
